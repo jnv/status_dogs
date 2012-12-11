@@ -1,10 +1,10 @@
-# Status Dogs
+# Status Dogs [![Build Status](https://travis-ci.org/jnv/status_dogs.png?branch=master)](https://travis-ci.org/jnv/status_dogs)
 
 Rack middleware replacing responses with relevant pictures of dogs, based on the status code.
 
 The pictures are made/collected by [Mike Lee](https://twitter.com/mikeleeorg) on [HTTP Status Dogs](http://httpstatusdogs.com/).
 
-This is a shameless fork of [status_cats](https://github.com/iain/status_cats) by @iain.
+This is a shameless fork of [status_cats](https://github.com/iain/status_cats) by [Iain Hecker](https://github.com/iain).
 
 ## Usage
 
