@@ -12,7 +12,7 @@ class StatusCats
   def call(env)
     @status, @headers, @response = @app.call(env)
     if display_cat?
-      _, @headers, @response = Rack::File.new(CATS_DIR).call("PATH_INFO" => "#{@status}.jpg")
+      _, @headers, @response = Rack::File.new(CATS_DIR).call("REQUEST_METHOD" => "GET", "PATH_INFO" => "#{@status}.jpg")
     end
     [ @status, @headers, @response ]
   end
