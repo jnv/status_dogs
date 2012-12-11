@@ -9,7 +9,7 @@ RSpec::Matchers.define :be_replaced_with_dog do |code|
     if code.nil?
       actual.body != "Hello, World!"
     else
-      path = File.expand_path("../../cats/#{code}.jpg", __FILE__)
+      path = File.expand_path("../../dogs/#{code}.jpg", __FILE__)
       file = File.open(path, 'rb')
       actual.body == file.read &&
       actual.status == code &&
