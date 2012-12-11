@@ -1,37 +1,37 @@
-# Status Cats
+# Status Dogs
 
-Rack middleware replacing responses with relevant pictures of cats, based on the status code.
+Rack middleware replacing responses with relevant pictures of dogs, based on the status code.
 
-The pictures are made/collected by girliemac on [Flickr](http://www.flickr.com/photos/girliemac/sets/72157628409467125/detail/)
+The pictures are made/collected by [Mike Lee](https://twitter.com/mikeleeorg) on [HTTP Status Dogs](http://httpstatusdogs.com/).
 
-There is also an [apache module](https://gist.github.com/1476499).
+This is a shameless fork of [status_cats](https://github.com/iain/status_cats) by @iain.
 
 ## Usage
 
 Install:
 
 ``` sh
-gem install status_cats
+gem install status_dogs
 ```
 
 Place inside your rackup file:
 
 ``` ruby
-require 'status_cats'
-use StatusCats
+require 'status_dogs'
+use StatusDogs
 ```
 
 This will also replace valid responses, even `200`, basically making your application useless.
 
-You can manage which status codes should be replaced with cats, by using the `:only` and `:except`
+You can manage which status codes should be replaced with dogs, by using the `:only` and `:except`
 options, which take arrays or ranges.
 
 ``` ruby
-use StatusCats, :only => [ 403, 404, 500 ]
+use StatusDogs, :only => [ 403, 404, 500 ]
 
 # or ...
 
-use StatusCats, :except => 200...300
+use StatusDogs, :except => 200...300
 ```
 
 ## Development
@@ -60,11 +60,10 @@ The application will trigger the response code depending on the path you visit, 
 
 ## Known issues
 
-Status code 100 (Continue) cannot have a response body. Triggering it will cause Rack to throw up.
+Status codes `100` (Continue), `204` (No Content) and `304` (Not Modified) cannot have a response body. Triggering them will cause Rack to throw up.
 
 ## License
 
 The Ruby code in this project is released under the MIT License.
 
-The pictures of cats are by Flickr user [girliemac](http://www.flickr.com/photos/girliemac/),
-released under [this](http://creativecommons.org/licenses/by/2.0/deed.en) Creative Commons License.
+The pictures of dogs are copywrited by [Mike Lee](https://twitter.com/mikeleeorg) from http://httpstatusdogs.com/
