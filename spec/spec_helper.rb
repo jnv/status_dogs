@@ -1,10 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'rack/test'
-require 'status_cats'
+require 'status_dogs'
 require 'test_app'
 
-RSpec::Matchers.define :be_replaced_with_cat do |code|
+RSpec::Matchers.define :be_replaced_with_dog do |code|
   match do |actual|
     if code.nil?
       actual.body != "Hello, World!"

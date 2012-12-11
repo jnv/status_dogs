@@ -1,15 +1,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name        = "status_cats"
+  s.name        = "status_dogs"
   s.version     = "0.0.1"
-  s.authors     = ["iain"]
-  s.email       = ["iain@iain.nl"]
-  s.homepage    = "https://github.com/iain/status_cats"
-  s.summary     = %q{Rack middleware; replaces responses with cats}
-  s.description = %q{Rack middleware replacing responses with relevant pictures of cats, based on the status code.}
-
-  s.rubyforge_project = "status_cats"
+  s.authors     = ["Jan Vlnas", "iain"]
+  s.email       = ["gems@jan.vlnas.cz", "iain@iain.nl"]
+  s.homepage    = "https://github.com/jnv/status_dogs"
+  s.summary     = %q{Rack middleware; replaces responses with dogs}
+  s.description = %q{Rack middleware replacing responses with relevant pictures of dogs, based on the status code.}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

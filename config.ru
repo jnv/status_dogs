@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'bundler/setup'
-require 'status_cats'
+require 'status_dogs'
 
 require File.expand_path('../spec/test_app', __FILE__)
 
-use StatusCats
+use StatusDogs
 run TestApp.new
