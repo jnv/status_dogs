@@ -18,7 +18,7 @@ describe StatusDogs do
     end
 
     it "won't replace response with a dog if there is no file for it" do
-      get "201"
+      get "600"
       last_response.should_not be_replaced_with_dog
     end
 
@@ -34,7 +34,7 @@ describe StatusDogs do
     end
 
     it "will not replace if there is no file for it" do
-      get "201"
+      get "299"
       last_response.should_not be_replaced_with_dog
     end
 
