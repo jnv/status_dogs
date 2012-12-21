@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name        = "status_dogs"
-  gem.version     = "0.0.1"
+  gem.version     = "0.0.2"
   gem.authors     = ["Jan Vlnas", "iain"]
   gem.email       = ["gems@jan.vlnas.cz", "iain@iain.nl"]
   gem.homepage    = "https://github.com/jnv/status_dogs"
