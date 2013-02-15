@@ -1,4 +1,6 @@
-# Status Dogs [![Build Status](https://travis-ci.org/jnv/status_dogs.png?branch=master)](https://travis-ci.org/jnv/status_dogs)
+# Status Dogs
+
+[![Gem Version](https://badge.fury.io/rb/status_dogs.png)](http://badge.fury.io/rb/status_dogs) [![Build Status](https://travis-ci.org/jnv/status_dogs.png?branch=master)](https://travis-ci.org/jnv/status_dogs)
 
 Rack middleware replacing responses with relevant pictures of dogs, based on the status code.
 
